@@ -19,7 +19,10 @@ class VinylController extends AbstractController
             ['song' => 'Ironic', 'artist' => 'Alanis Morissette'],
             ['song' => 'Creep', 'artist' => 'Radiohead'],
             ['song' => 'Linger', 'artist' => 'The Cranberries'],
+            
         ];
+
+        dd($tracks);
 
         return $this->render('vinyl/homepage.html.twig', [
             'title' => 'PB & Jams',
