@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SongController extends AbstractController {
 
-    #[Route('/api/song/{id<\d+>}', name: 'api_song_get', methods: ['GET'])]
+    #[Route('/api/song/{id<\d+>}', methods: ['GET'], name : 'api_song_get_one')]
     public function getSong(int $id, LoggerInterface $logger): Response
     {
         // TODO: query the database
